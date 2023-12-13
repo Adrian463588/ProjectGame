@@ -1,0 +1,4 @@
+repository "WrathOfDisaster@adriansa@cloud"
+  path "/"
+    br "/main"
+    co "/main"
