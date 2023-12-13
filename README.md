@@ -7,15 +7,13 @@
 - Adrian Syah Abidin - 20/463588/TK/51580
 - Imam Arif Hadi Pramono - 20/460546/TK/51135
 
-...
+---
 
 ## Demo Video
 
 Klik thumbnail di bawah untuk menonton demo video dari "Wrath of the Disasters":
 
 [![Demo Video](https://img.youtube.com/vi/XGk-1T3N3SU/0.jpg)](https://youtu.be/XGk-1T3N3SU)
-
-...
 
 ---
 
