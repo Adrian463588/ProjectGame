@@ -1,4 +1,3 @@
-using Unity.VisualScripting.ReorderableList;
 using UnityEngine;
 
 public class EnemyPatrol : MonoBehaviour
@@ -51,6 +50,12 @@ public class EnemyPatrol : MonoBehaviour
                 DirectionChange();
             }
         }
+
+    }
+
+    private void OnDisable()
+    {
+        anim.SetBool("moving", false);
     }
 
     private void MoveInDirection(int _direction)
