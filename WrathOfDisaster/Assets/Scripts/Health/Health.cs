@@ -5,14 +5,17 @@ using UnityEngine;
 public class Health : MonoBehaviour
 {
     [SerializeField] private float startingHealth;
+    [SerializeField]private GameObject healthObject;
     public float currentHealth { get; private set; }
     private Animator anim;
     private bool dead;
+
 
     private void Awake()
     {
         currentHealth = startingHealth;
         anim = GetComponent<Animator>();
+        
     }
     public void TakeDamage(float _damage)
     {
@@ -32,8 +35,14 @@ public class Health : MonoBehaviour
                 if(GetComponent<PlayerMovement>() != null)
                     GetComponent<PlayerMovement>().enabled = false;
 
-                if (GetComponent<EnemyPatrol>() != null)
+                if (GetComponentInParent<EnemyPatrol>() != null)
                     GetComponentInParent<EnemyPatrol>().enabled = false;
+                
+                healthObject.SetActive(false);
+                
+
+                if (GetComponent<Enemy>() != null)
+                    GetComponent<Enemy>().enabled = false;
 
                 dead = true;
             }
